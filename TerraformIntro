@@ -1,0 +1,23 @@
+Terraform:
+ - IaC - change,build cloud and on premises
+ - It is wokring through API
+ - workflow of Terraform 
+      write -> plan -> Apply
+ - It is immutable approach - create new infra
+ - Infra is getting tracked by STATE FILE
+ - Config file describe th infra end
+ - Modules - Reuse of config
+Configuration Language:
+  - To declare resources in infrastructure
+
+resource "aws_vpc" "main" {
+  cidr_block = var.base_cidr_block
+}
+
+<BLOCK TYPE> "<BLOCK LABEL>" "<BLOCK LABEL>" {
+  # Block body
+  <IDENTIFIER> = <EXPRESSION> # Argument
+}
+
+Blocks - Container of content like resource
+  * Block type * Block label *Identifier *Expression * Argument
